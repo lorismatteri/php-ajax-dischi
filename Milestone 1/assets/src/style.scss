@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
+/* Variabili */
+$header_color: #191414;
+$main_color: #282828;
+$text_grey: grey;
+/* /Variabili */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 .container {
     width: 70%;
     margin: auto;
 }
 
 header {
-    background: #191414;
+    background: $header_color;
 
     img {
         width: 5%;
@@ -23,8 +33,38 @@ header {
 }
 
 main {
-    min-height: 100vh;
-    background-color: #282828;
+    background-color: $main_color;
     color: white;
+    .albums {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        .album {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 20%;
+            padding: 2rem;
+            margin: 1rem 2rem;
+            background: $header_color;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+            h3 {
+                margin: 1rem 0;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+            p {
+                color: $text_grey;
+            }
+            p:first-of-type {
+                font-size: 1.1rem;
+                padding: .5rem 0;
+            }
+        }
+    }
 }
-
