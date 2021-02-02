@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Variabili */
+/* /Variabili */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  background: #191414;
+}
+
+header img {
+  width: 5%;
+}
+
+header div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+main {
+  background-color: #282828;
+  color: white;
+}
+
+main .albums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3rem 0;
+}
+
+main .albums .album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  padding: 2rem;
+  margin: 1rem 2rem;
+  background: #191414;
+  text-align: center;
+}
+
+main .albums .album img {
+  width: 100%;
+}
+
+main .albums .album h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+main .albums .album p {
+  color: grey;
+}
+
+main .albums .album p:first-of-type {
+  font-size: 1.1rem;
+  padding: .5rem 0;
+}
+/*# sourceMappingURL=style.css.map */

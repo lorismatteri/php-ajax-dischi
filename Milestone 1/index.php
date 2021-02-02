@@ -28,8 +28,8 @@
                     <div class="album">
                         <img src="<?php echo $album["poster"]; ?>" alt="">
                         <h3><?php echo $album["title"]; ?></h3>
-                        <p class="author"><?php echo $album["author"]; ?></p>
-                        <p class="year"><?php echo $album["year"]; ?></p>
+                        <p><?php echo $album["author"]; ?></p>
+                        <p><?php echo $album["year"]; ?></p>
                     </div>
             <?php }?>
             </div>

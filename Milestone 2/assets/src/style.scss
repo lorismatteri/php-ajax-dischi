@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabili */
+$header_color: #191414;
+$main_color: #282828;
+$text_grey: grey;
+/* /Variabili */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+header {
+    background: $header_color;
+
+    img {
+        width: 5%;
+    }
+    div.container {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+main {
+    background-color: $main_color;
+    color: white;
+    .albums {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        .album {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 20%;
+            padding: 2rem;
+            margin: 1rem 2rem;
+            background: $header_color;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+            h3 {
+                margin: 1rem 0;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+            p {
+                color: $text_grey;
+            }
+            p:first-of-type {
+                font-size: 1.1rem;
+                padding: .5rem 0;
+            }
+        }
+    }
+}
