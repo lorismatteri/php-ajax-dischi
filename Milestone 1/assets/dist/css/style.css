@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  background: #191414;
+}
+
+header img {
+  width: 5%;
+}
+
+header div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #282828;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

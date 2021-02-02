@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+header {
+    background: #191414;
+
+    img {
+        width: 5%;
+    }
+    div.container {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+main {
+    min-height: 100vh;
+    background-color: #282828;
+    color: white;
+}
+
