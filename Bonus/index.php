@@ -24,26 +24,32 @@
     </head>
     <body>
 
-        <header>
-            <div class="container">
-                <img src="./assets/dist/img/logo.png" alt="logo" />
-            </div>
-        </header>
-
-        <main>
-
-            <div id="app" class="container albums">
-                
-                <div class="album" v-for="album in albumList">
-                    <img :src="album.poster" alt="">
-                    <h3>{{album.title}}</h3>
-                    <p>{{album.author}}</p>
-                    <p>{{album.year}}</p>
+        <div id="app">
+            <header>
+                <div class="container">
+                    <img src="./assets/dist/img/logo.png" alt="logo" />
+                    <select name="" id="filter">
+                        <option value="">Select Author</option>
+                        <option v-for="album in albumList" :value="album.author">{{album.author}}</option>
+                    </select>
                 </div>
-            
-            </div>
-            
-        </main>
+            </header>
+    
+            <main>
+    
+                <div class="container albums">
+                    
+                    <div class="album" v-for="album in albumList">
+                        <img :src="album.poster" alt="">
+                        <h3>{{album.title}}</h3>
+                        <p>{{album.author}}</p>
+                        <p>{{album.year}}</p>
+                    </div>
+                
+                </div>
+                
+            </main>
+        </div>
 
         
 
